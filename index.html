@@ -1,0 +1,2179 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Machine Learning Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Machine Learning Test</h1>
+      <form id="quizForm">
+        <div class="question">
+          <p>1. Любишь машинное обучение?</p>
+          <label><input type="radio" name="q1" value="Да" />Да</label>
+          <label><input type="radio" name="q1" value="Нет" />Нет</label>
+        </div>
+
+        <div class="question">
+          <p>2. Дополни предложение: абстрактная вычислительная машина ...</p>
+          <input type="text" name="q2" />
+        </div>
+
+        <div class="question">
+          <p>3. Что такое машинное обучение?</p>
+          <select name="q3">
+            <option value="svm">
+              Процесс, при котором компьютеры обучаются самостоятельно
+            </option>
+            <option value="knn">
+              Процесс, при котором компьютеры могут программироваться для
+              обучения
+            </option>
+            <option value="dna">
+              Процесс, при котором компьютеры могут анализировать данные и
+              делать прогнозы
+            </option>
+            <option value="tree">
+              Процесс, при котором компьютеры могут выполнять сложные вычисления
+            </option>
+          </select>
+        </div>
+
+        <!-- Add more questions here -->
+
+        <div class="question">
+          <p>4. Какие типы машинного обучения существуют?</p>
+          <label
+            ><input
+              type="radio"
+              name="q4"
+              value="Наблюдаемое и ненаблюдаемое обучение"
+            />Наблюдаемое и ненаблюдаемое обучение</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="q4"
+              value="Обучение с кучером и без кучера"
+            />Обучение с кучером и без кучера</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="q4"
+              value="Подкрепляющее обучение и глубокое обучение"
+            />Подкрепляющее обучение и глубокое обучение</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="q4"
+              value="Обучение на основе правил и статистическое обучение"
+            />Обучение на основе правил и статистическое обучение</label
+          >
+        </div>
+
+        <div class="question">
+          <p>
+            5. Какими методами можно представить данные в машинном обучении?
+          </p>
+          <label
+            ><input
+              type="radio"
+              name="q5"
+              value="Текстовыми и числовыми данными"
+            />Текстовыми и числовыми данными</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="q5"
+              value="Графическими и звуковыми данными"
+            />Графическими и звуковыми данными</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="q5"
+              value="Структурированными и неструктурированными данными"
+            />Структурированными и неструктурированными данными</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="q5"
+              value="Все перечисленные варианты"
+            />Все перечисленные варианты</label
+          >
+        </div>
+
+        <div class="question">
+            <p>
+              6. Что такое переобучение в машинном обучении?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q6"
+                value="Процесс, при котором модель обучается на большом количестве данных"
+              />Процесс, при котором модель обучается на большом количестве данных</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q6"
+                value="Процесс, при котором модель становится слишком сложной и не способна обобщать данные"
+              />Процесс, при котором модель становится слишком сложной и не способна обобщать данные</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q6"
+                value="Процесс, при котором модель становится недостаточно точной"
+              />Процесс, при котором модель становится недостаточно точной</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q6"
+                value="Процесс, при котором модель не может обрабатывать новые данные"
+              />Процесс, при котором модель не может обрабатывать новые данные</label
+            >
+          </div>
+
+
+          <div class="question">
+            <p>
+              7. Какими метриками можно оценить качество модели в машинном обучении?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q7"
+                value="Точность и полнота"
+              />Точность и полнота</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q7"
+                value="Среднеквадратическая ошибка и коэффициент детерминации"
+              />Среднеквадратическая ошибка и коэффициент детерминации</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q7"
+                value="F-мера и ROC-кривая"
+              />F-мера и ROC-кривая</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q7"
+                value="Все перечисленные варианты"
+              />Все перечисленные варианты</label
+            >
+          </div>  
+
+
+
+          <div class="question">
+            <p>
+              8. Какие алгоритмы машинного обучения используются для классификации данных?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q8"
+                value="Регрессия и кластеризация"
+              />Регрессия и кластеризация</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q8"
+                value="Деревья решений и случайный лес"
+              />Деревья решений и случайный лес</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q8"
+                value="Нейронные сети и генетические алгоритмы"
+              />Нейронные сети и генетические алгоритмы</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q8"
+                value="Все перечисленные варианты"
+              />Все перечисленные варианты</label
+            >
+          </div>  
+
+          <div class="question">
+            <p>9. Вставь пропушенное слово в предложение:нейронная сеть в машинном обучении - это модель, состоящая из ... и связей между ними</p>
+            <input type="text" name="q9" />
+          </div>
+
+          <div class="question">
+            <p>10. Каким образом происходит обучение нейронной сети?</p>
+            <select name="q10">
+              <option value="svm">
+                Путем подбора оптимальных весов связей между нейронами
+              </option>
+              <option value="knn">
+                Путем добавления новых нейронов и связей в сеть
+              </option>
+              <option value="dna">
+                Путем обработки большого количества данных
+              </option>
+              <option value="tree">
+                Путем программирования нейронной сети
+              </option>
+            </select>
+          </div>
+          
+          <div class="question">
+            <p>
+              11. Какие проблемы могут возникнуть при использовании машинного обучения?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q11"
+                value="Недостаток данных для обучения модели"
+              />Недостаток данных для обучения модели</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q11"
+                value="Неправильная предобработка данных"
+              />Неправильная предобработка данных</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q11"
+                value="Неправильный выбор алгоритма обучения"
+              />Неправильный выбор алгоритма обучения</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q11"
+                value="Все перечисленные варианты"
+              />Все перечисленные варианты</label
+            >
+          </div>
+
+          <div class="question">
+            <p>
+              12. Какие сферы применения машинного обучения существуют?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q12"
+                value="Медицина и финансы"
+              />Медицина и финансы</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q12"
+                value="Транспорт и логистика"
+              />Транспорт и логистика</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q12"
+                value="Реклама и маркетинг"
+              />Реклама и маркетинг</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q12"
+                value="Все перечисленные варианты"
+              />Все перечисленные варианты</label
+            >
+          </div>
+
+          <div class="question">
+            <p>
+              13. Какая функция активации используется в нейронных сетях для бинарной классификации?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q13"
+                value="Сигмоидальная функция"
+              />Сигмоидальная функция</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q13"
+                value="Гиперболический тангенс"
+              />Гиперболический тангенс</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q13"
+                value="Линейная функция"
+              />Линейная функция</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q13"
+                value="ReLU"
+              />ReLU</label
+            >
+          </div>
+
+          <div class="question">
+            <p>14. Вставь пропушенное слово в предложение:метрика обычно используется для оценки качества моделей классификации называется ...</p>
+            <input type="text" name="q14" />
+          </div>
+
+          <div class="question">
+            <p>15. Какой метод регуляризации помогает бороться с переобучением в нейронных сетях?</p>
+            <select name="q15">
+              <option value="svm">
+                L1-регуляризация
+              </option>
+              <option value="knn">
+                L2-регуляризация
+              </option>
+              <option value="dna">
+                Dropout
+              </option>
+              <option value="tree">
+                Batch Normalization
+              </option>
+            </select>
+          </div>
+
+
+          <div class="question">
+            <p>16. Какой алгоритм оптимизации часто используется для обучения нейронных сетей?</p>
+            <select name="q16">
+              <option value="svm">
+                Градиентный спуск
+              </option>
+              <option value="knn">
+                Стохастический градиентный спуск
+              </option>
+              <option value="dna">
+                Adam
+              </option>
+              <option value="tree">
+                Все вышеперечисленные
+              </option>
+            </select>
+          </div>
+
+
+          <div class="question">
+            <p>17. Какие методы можно использовать для предобработки данных перед обучением модели?</p>
+            <select name="q17">
+              <option value="svm">
+                Масштабирование признаков
+              </option>
+              <option value="knn">
+                Заполнение пропущенных значений
+              </option>
+              <option value="dna">
+                Кодирование категориальных признаков
+              </option>
+              <option value="tree">
+                Все вышеперечисленные
+              </option>
+            </select>
+          </div>
+
+
+          <div class="question">
+            <p>18. Какой алгоритм кластеризации основан на минимизации суммы квадратов расстояний до центроидов?</p>
+            <select name="q18">
+              <option value="svm">
+                K-means
+              </option>
+              <option value="knn">
+                DBSCAN
+              </option>
+              <option value="dna">
+                Иерархическая кластеризация
+              </option>
+              <option value="tree">
+                Mean-shift
+              </option>
+            </select>
+          </div>
+
+
+          <div class="question">
+            <p>19. Какая модель регрессии подходит для прогнозирования непрерывной переменной?</p>
+            <select name="q19">
+              <option value="svm">
+                Линейная регрессия
+              </option>
+              <option value="knn">
+                Решающее дерево
+              </option>
+              <option value="dna">
+                Случайный лес
+              </option>
+              <option value="tree">
+                SVM
+              </option>
+            </select>
+          </div>
+
+
+          <div class="question">
+            <p>20. Какая техника выбора признаков позволяет отобрать наиболее информативные признаки для модели?</p>
+            <select name="q20">
+              <option value="svm">
+                Отбор признаков на основе важности
+              </option>
+              <option value="knn">
+                Рекурсивное исключение признаков
+              </option>
+              <option value="dna">
+                PCA
+              </option>
+              <option value="tree">
+                Все вышеперечисленные
+              </option>
+            </select>
+          </div>
+
+
+          <div class="question">
+            <p>21. Какой алгоритм рекомендательных систем основан на матричном разложении?</p>
+            <select name="q21">
+              <option value="svm">
+                Content-based filtering
+              </option>
+              <option value="knn">
+                Collaborative filtering
+              </option>
+              <option value="dna">
+                Hybrid recommender systems
+              </option>
+              <option value="tree">
+                Singular Value Decomposition (SVD)
+              </option>
+            </select>
+          </div>
+
+
+          <div class="question">
+            <p>22. Какой алгоритм обучения с учителем используется для задачи ранжирования?</p>
+            <select name="q22">
+              <option value="svm">
+                Логистическая регрессия
+              </option>
+              <option value="knn">
+                Random Forest
+              </option>
+              <option value="dna">
+                Gradient Boosting
+              </option>
+              <option value="tree">
+                RankNet
+              </option>
+            </select>
+          </div>
+
+           <div class="question">
+            <p>
+              23. Какие из перечисленных методов являются алгоритмами обучения без учителя?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q23"
+                value="K-means"
+              />K-means</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q23"
+                value="Decision Tree"
+              />Decision Tree</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q23"
+                value="Random Forest"
+              />Random Forest</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q23"
+                value="Naive Bayes"
+              />Naive Bayes</label
+            >
+          </div>
+
+          <div class="question">
+            <p>
+              24. Какой метод используется для снижения размерности данных?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q24"
+                value="Principal Component Analysis (PCA)"
+              />Principal Component Analysis (PCA)</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q24"
+                value="Support Vector Machine (SVM)"
+              />Support Vector Machine (SVM)</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q24"
+                value="K-nearest Neighbors (KNN)"
+              />K-nearest Neighbors (KNN)</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q24"
+                value="Singular Value Decomposition (SVD)"
+              />Singular Value Decomposition (SVD)</label
+            >
+          </div>
+
+
+
+          <div class="question">
+            <p>25. Какой алгоритм используется для обнаружения аномалий в данных?</p>
+            <select name="q25">
+              <option value="svm">
+                K-means
+              </option>
+              <option value="knn">
+                Random Forest
+              </option>
+              <option value="dna">
+                Isolation Forest
+              </option>
+              <option value="tree">
+                Decision Tree
+              </option>
+            </select>
+          </div>
+
+
+          <div class="question">
+            <p>26. Какая метрика используется для оценки качества модели регрессии?</p>
+            <select name="q26">
+              <option value="svm">
+                Mean Absolute Error (MAE)
+              </option>
+              <option value="knn">
+                Precision
+              </option>
+              <option value="dna">
+                Recall
+              </option>
+              <option value="tree">
+                F1-score
+              </option>
+            </select>
+          </div>
+
+          <div class="question">
+            <p>27. Какая техника используется для балансировки классов в задаче классификации?</p>
+            <select name="q27">
+              <option value="svm">
+                Oversampling
+              </option>
+              <option value="knn">
+                Undersampling
+              </option>
+              <option value="dna">
+                SMOTE
+              </option>
+              <option value="tree">
+                All of the above
+              </option>
+            </select>
+          </div>
+
+
+
+          <div class="question">
+            <p>28. Какие из перечисленных методов являются алгоритмами обучения с подкреплением?</p>
+            <select name="q28">
+              <option value="svm">
+                Q-Learning
+              </option>
+              <option value="knn">
+                Decision Tree
+              </option>
+              <option value="dna">
+                Random Forest
+              </option>
+              <option value="tree">
+                Naive Bayes
+              </option>
+            </select>
+          </div>
+
+
+          <div class="question">
+            <p>29. Какие из перечисленных методов используются для решения задачи регрессии?</p>
+            <select name="q29">
+              <option value="svm">
+                Support Vector Machine (SVM)
+              </option>
+              <option value="knn">
+                K-means
+              </option>
+              <option value="dna">
+                Ridge Regression
+              </option>
+              <option value="tree">
+                Decision Tree
+              </option>
+            </select>
+          </div>
+
+
+          <div class="question">
+            <p>30. Какой алгоритм используется для предсказания категориальной целевой переменной?</p>
+            <select name="q30">
+              <option value="svm">
+                Logistic Regression
+              </option>
+              <option value="knn">
+                Naive Bayes
+              </option>
+              <option value="dna">
+                K-means
+              </option>
+              <option value="tree">
+                Decision Tree
+              </option>
+            </select>
+          </div>
+
+          <div class="question">
+            <p>31. Какой алгоритм используется для ранжирования документов?</p>
+            <select name="q31">
+              <option value="svm">
+                PageRank
+              </option>
+              <option value="knn">
+                K-means
+              </option>
+              <option value="dna">
+                Naive Bayes
+              </option>
+              <option value="tree">
+                Decision Tree
+              </option>
+            </select>
+          </div>
+
+
+          <div class="question">
+            <p>32. SVM (Support Vector Machine) подходит только для бинарной классификации?</p>
+            <label><input type="radio" name="q32" value="Да" />Да</label>
+            <label><input type="radio" name="q32" value="Нет" />Нет</label>
+          </div>
+
+
+          <div class="question">
+            <p>33. Метод главных компонент (PCA) используется для снижения размерности данных?</p>
+            <label><input type="radio" name="q33" value="Да" />Да</label>
+            <label><input type="radio" name="q33" value="Нет" />Нет</label>
+          </div>
+
+          <div class="question">
+            <p>34. Random Forest - это ансамблевый метод, который комбинирует несколько деревьев решений?</p>
+            <label><input type="radio" name="q34" value="Да" />Да</label>
+            <label><input type="radio" name="q34" value="Нет" />Нет</label>
+          </div>
+
+
+          <div class="question">
+            <p>35. Алгоритм AdaBoost использует взвешенное голосование слабых классификаторов?</p>
+            <label><input type="radio" name="q35" value="Да" />Да</label>
+            <label><input type="radio" name="q35" value="Нет" />Нет</label>
+          </div>
+
+          <div class="question">
+            <p>36. Какой метод машинного обучения используется для прогнозирования непрерывных значений?</p>
+            <select name="q36">
+              <option value="svm">
+                Логистическая регрессия
+              </option>
+              <option value="knn">
+                Дерево решений
+              </option>
+              <option value="dna">
+                K-means
+              </option>
+              <option value="tree">
+                SVM
+              </option>
+            </select>
+          </div>
+
+          <div class="question">
+            <p>37. Какой метод машинного обучения используется для бинарной классификации?</p>
+            <select name="q37">
+              <option value="svm">
+                Логистическая регрессия
+              </option>
+              <option value="knn">
+                Random Forest
+              </option>
+              <option value="dna">
+                K-means
+              </option>
+              <option value="tree">
+                PCA
+              </option>
+            </select>
+          </div>
+
+          <div class="question">
+            <p>38. Какой метод машинного обучения используется для комбинирования нескольких деревьев решений?</p>
+            <select name="q38">
+              <option value="svm">
+                Логистическая регрессия
+              </option>
+              <option value="knn">
+                Random Forest
+              </option>
+              <option value="dna">
+                K-means
+              </option>
+              <option value="tree">
+                SVM
+              </option>
+            </select>
+          </div>
+
+
+          <div class="question">
+            <p>39. Какой метод машинного обучения используется для предсказания категориальных значений?</p>
+            <select name="q39">
+              <option value="svm">
+                Логистическая регрессия
+              </option>
+              <option value="knn">
+                Decision Tree
+              </option>
+              <option value="dna">
+                K-means
+              </option>
+              <option value="tree">
+                SVM
+              </option>
+            </select>
+          </div>
+
+          <div class="question">
+            <p>40. Какой метод машинного обучения используется для прогнозирования временных рядов?</p>
+            <select name="q40">
+              <option value="svm">
+                Линейная регрессия
+              </option>
+              <option value="knn">
+                Random Forest
+              </option>
+              <option value="dna">
+                ARIMA
+              </option>
+              <option value="tree">
+                PCA
+              </option>
+            </select>
+          </div>
+
+          <div class="question">
+            <p>
+              41. Какой метод используется для прогнозирования будущих значений на основе прошлых данных?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q41"
+                value="Метод наименьших квадратов"
+              />Метод наименьших квадратов</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q41"
+                value="Экспоненциальное сглаживание"
+              />Экспоненциальное сглаживание</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q41"
+                value="Метод главных компонент"
+              />Метод главных компонент</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q41"
+                value="Bootstrap"
+              />Bootstrap</label
+            >
+          </div>
+
+
+          <div class="question">
+            <p>
+              42. Какой метод прогнозирования подходит для данных, где есть тренд и сезонность?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q42"
+                value="Простое экспоненциальное сглаживание"
+              />Простое экспоненциальное сглаживание</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q42"
+                value="ARIMA"
+              />ARIMA</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q42"
+                value="Логистическая регрессия"
+              />Логистическая регрессия</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q42"
+                value="Random Forest"
+              />Random Forest</label
+            >
+          </div>
+
+
+          <div class="question">
+            <p>
+              43. Какой метод прогнозирования используется для данных с изменяющейся дисперсией?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q43"
+                value="ARIMA"
+              />ARIMA</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q43"
+                value="GARCH"
+              />GARCH</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q43"
+                value=" K-means"
+              /> K-means</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q43"
+                value="Дерево решений"
+              />Дерево решений</label
+            >
+          </div>
+
+          <div class="question">
+            <p>
+              44. Какой метод прогнозирования помогает учитывать взаимосвязи между различными переменными?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q44"
+                value="Линейная регрессия"
+              />Линейная регрессия</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q44"
+                value="VAR (векторная авторегрессия)"
+              />VAR (векторная авторегрессия)</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q44"
+                value=" K-means"
+              /> K-means</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q44"
+                value="SVM"
+              />SVM</label
+            >
+          </div>
+
+          <div class="question">
+            <p>45. Какой метод прогнозирования используется для данных с циклическими изменениями?</p>
+            <select name="q45">
+              <option value="svm">
+                ARIMA
+              </option>
+              <option value="knn">
+                Фурье-анализ
+              </option>
+              <option value="dna">
+                Логистическая регрессия
+              </option>
+              <option value="tree">
+                Random Forest
+              </option>
+            </select>
+          </div>
+
+          <div class="question">
+            <p>46. Какой метод прогнозирования подходит для данных с выбросами и аномалиями?</p>
+            <select name="q46">
+              <option value="svm">
+                Метод скользящего среднего
+              </option>
+              <option value="knn">
+                Кластерный анализ
+              </option>
+              <option value="dna">
+                LOESS (локально взвешенное сглаживание)
+              </option>
+              <option value="tree">
+                Дерево решений
+              </option>
+            </select>
+          </div>
+
+          <div class="question">
+            <p>47. Какой метод прогнозирования используется для данных, где есть нелинейные зависимости?</p>
+            <select name="q47">
+              <option value="svm">
+                Линейная регрессия
+              </option>
+              <option value="knn">
+                Нейронные сети
+              </option>
+              <option value="dna">
+                K-means
+              </option>
+              <option value="tree">
+                SVM
+              </option>
+            </select>
+          </div>
+
+          <div class="question">
+            <p>48. Какой метод прогнозирования помогает учитывать тренд и сезонность одновременно?</p>
+            <select name="q48">
+              <option value="svm">
+                Простое экспоненциальное сглаживание
+              </option>
+              <option value="knn">
+                Holt-Winters метод
+              </option>
+              <option value="dna">
+                PCA (метод главных компонент)
+              </option>
+              <option value="tree">
+                AdaBoost
+              </option>
+            </select>
+          </div>
+
+          <div class="question">
+            <p>49. Какой метод прогнозирования используется для данных, где есть автокорреляция?</p>
+            <select name="q49">
+              <option value="svm">
+                Линейная регрессия
+              </option>
+              <option value="knn">
+                ARMA
+              </option>
+              <option value="dna">
+                K-means
+              </option>
+              <option value="tree">
+                SVM
+              </option>
+            </select>
+          </div>
+
+          <div class="question">
+            <p>50. Дополни предложение: наиболее популярными ансамблевыми методами являются: стекинг, бэггинг, ...</p>
+            <input type="text" name="q50" />
+          </div>
+
+          <div class="question">
+            <p>
+              51. Какой инструмент используется для визуализации данных в машинном обучении?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q51"
+                value="TensorFlow"
+              />TensorFlow</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q51"
+                value="Matplotlib"
+              />Matplotlib</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q51"
+                value="PyTorch"
+              />PyTorch</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q51"
+                value="Scikit-learn"
+              />Scikit-learn</label
+            >
+          </div>
+
+          <div class="question">
+            <p>
+              52. Какой инструмент чаще всего используется для обработки и анализа данных в Python?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q52"
+                value="NumPy"
+              />NumPy</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q52"
+                value="Pandas"
+              />Pandas</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q52"
+                value="SciPy"
+              />SciPy</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q52"
+                value="Seaborn"
+              />Seaborn</label
+            >
+          </div>
+
+
+          <div class="question">
+            <p>
+              53. Какая библиотека является основным инструментом для создания нейронных сетей в Python?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q53"
+                value="TensorFlow"
+              />TensorFlow</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q53"
+                value="Matplotlib"
+              />Matplotlib</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q53"
+                value="Scikit-learn"
+              />Scikit-learn</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q53"
+                value="NumPy"
+              />NumPy</label
+            >
+          </div>
+
+
+          <div class="question">
+            <p>
+              54. Какой инструмент используется для разделения данных на обучающую и тестовую выборки?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q54"
+                value="PCA"
+              />PCA</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q54"
+                value="K-means"
+              />K-means</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q54"
+                value="Train_test_split"
+              />Train_test_split</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q54"
+                value="GridSearchCV"
+              />GridSearchCV</label
+            >
+          </div>
+
+
+          <div class="question">
+            <p>
+              55. Какой инструмент помогает выбрать лучшие параметры модели машинного обучения?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q55"
+                value="GridSearchCV"
+              />GridSearchCV</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q55"
+                value="K-fold кросс-валидация"
+              />K-fold кросс-валидация</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q55"
+                value="AdaBoost"
+              />AdaBoost</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q55"
+                value="Random Forest"
+              />Random Forest</label
+            >
+          </div>
+
+          <div class="question">
+            <p>56. Какой инструмент используется для уменьшения размерности данных?</p>
+            <select name="q56">
+              <option value="svm">
+                PCA
+              </option>
+              <option value="knn">
+                SVM
+              </option>
+              <option value="dna">
+                K-means
+              </option>
+              <option value="tree">
+                Gradient Boosting
+              </option>
+            </select>
+          </div>
+
+          <div class="question">
+            <p>57. Какой инструмент помогает обнаружить и устранить пропущенные значения в данных?</p>
+            <select name="q57">
+              <option value="svm">
+                Imputer
+              </option>
+              <option value="knn">
+                One-Hot Encoder
+              </option>
+              <option value="dna">
+                MinMaxScaler
+              </option>
+              <option value="tree">
+                StandardScaler
+              </option>
+            </select>
+          </div>
+
+          <div class="question">
+            <p>58. Какой инструмент помогает преобразовать категориальные данные в числовой формат?</p>
+            <select name="q58">
+              <option value="svm">
+                LabelEncoder
+              </option>
+              <option value="knn">
+                One-Hot Encoder
+              </option>
+              <option value="dna">
+                MinMaxScaler
+              </option>
+              <option value="tree">
+                StandardScaler
+              </option>
+            </select>
+          </div>
+
+
+          <div class="question">
+            <p>59. Какой инструмент используется для определения наилучшего количества кластеров в методе K-means?</p>
+            <select name="q59">
+              <option value="svm">
+                Elbow Method
+              </option>
+              <option value="knn">
+                Silhouette Score
+              </option>
+              <option value="dna">
+                GridSearchCV
+              </option>
+              <option value="tree">
+                RandomizedSearchCV
+              </option>
+            </select>
+          </div>
+
+          <div class="question">
+            <p>60. Какой инструмент помогает оценить важность признаков в модели машинного обучения?</p>
+            <select name="q60">
+              <option value="svm">
+                Feature Importance
+              </option>
+              <option value="knn">
+                GridSearchCV
+              </option>
+              <option value="dna">
+                Cross_val_score
+              </option>
+              <option value="tree">
+                R2 Score
+              </option>
+            </select>
+          </div>
+
+          <div class="question">
+            <p>61. Какой инструмент позволяет объединить несколько моделей машинного обучения в одну?</p>
+            <select name="q61">
+              <option value="svm">
+                Ensemble Learning
+              </option>
+              <option value="knn">
+                AdaBoost
+              </option>
+              <option value="dna">
+                Gradient Boosting
+              </option>
+              <option value="tree">
+                Random Forest
+              </option>
+            </select>
+          </div>
+
+          <div class="question">
+            <p>62. Какой инструмент используется для автоматического масштабирования признаков?</p>
+            <select name="q62">
+              <option value="svm">
+                MinMaxScaler
+              </option>
+              <option value="knn">
+                StandardScaler
+              </option>
+              <option value="dna">
+                RobustScaler
+              </option>
+              <option value="tree">
+                Normalizer
+              </option>
+            </select>
+          </div>
+
+
+          <div class="question">
+            <p>63.Какой инструмент помогает обработать дисбаланс классов в задаче классификации?</p>
+            <select name="q63">
+              <option value="svm">
+                Oversampling
+              </option>
+              <option value="knn">
+                Undersampling
+              </option>
+              <option value="dna">
+                SMOTE
+              </option>
+              <option value="tree">
+                ADASYN
+              </option>
+            </select>
+          </div>
+
+
+          <div class="question">
+            <p>64.Какой инструмент используется для определения оптимального числа деревьев в случайном лесе?</p>
+            <select name="q64">
+              <option value="svm">
+                GridSearchCV
+              </option>
+              <option value="knn">
+                RandomizedSearchCV
+              </option>
+              <option value="dna">
+                Feature Importance
+              </option>
+              <option value="tree">
+                OOB Score
+              </option>
+            </select>
+          </div>
+
+          <div class="question">
+            <p>65.Какой инструмент помогает оценить качество модели машинного обучения на нескольких разбиениях данных?</p>
+            <select name="q65">
+              <option value="svm">
+                Cross_val_score
+              </option>
+              <option value="knn">
+                Train_test_split
+              </option>
+              <option value="dna">
+                GridSearchCV
+              </option>
+              <option value="tree">
+                RandomizedSearchCV
+              </option>
+            </select>
+          </div>
+
+          <div class="question">
+            <p>66.Какой инструмент используется для регуляризации линейных моделей в машинном обучении?</p>
+            <select name="q66">
+              <option value="svm">
+                L1 Regularization (Lasso)
+              </option>
+              <option value="knn">
+                L2 Regularization (Ridge)
+              </option>
+              <option value="dna">
+                ElasticNet Regularization
+              </option>
+              <option value="tree">
+                Dropout
+              </option>
+            </select>
+          </div>
+
+          <div class="question">
+            <p>67.Какой инструмент помогает улучшить обобщающую способность модели машинного обучения?</p>
+            <select name="q67">
+              <option value="svm">
+                Dropout
+              </option>
+              <option value="knn">
+                Batch Normalization
+              </option>
+              <option value="dna">
+                Early Stopping
+              </option>
+              <option value="tree">
+                Data Augmentation
+              </option>
+            </select>
+          </div>
+
+
+          <div class="question">
+            <p>68.Какой инструмент используется для улучшения сходимости нейронных сетей при обучении?</p>
+            <select name="q68">
+              <option value="svm">
+                Batch Normalization
+              </option>
+              <option value="knn">
+                Dropout
+              </option>
+              <option value="dna">
+                L1 Regularization (Lasso)
+              </option>
+              <option value="tree">
+                Data Augmentation
+              </option>
+            </select>
+          </div>
+
+          <div class="question">
+            <p>69.Какой инструмент используется для улучшения сходимости нейронных сетей при обучении?</p>
+            <select name="q69">
+              <option value="svm">
+                RobustScaler
+              </option>
+              <option value="knn">
+                Outlier Detection Techniques
+              </option>
+              <option value="dna">
+                Isolation For
+              </option>
+              <option value="tree">
+                One-Class SVM
+              </option>
+            </select>
+          </div>
+
+          <div class="question">
+            <p>70. Какое ... используется для хранения больших объемов данных в глубоком обучении?</p>
+            <input type="text" name="q70" />
+          </div>
+
+          <div class="question">
+            <p>71.  ...-файлы часто используются для сохранения весов моделей глубокого обучения.</p>
+            <input type="text" name="q71" />
+          </div>
+
+          <div class="question">
+            <p>72.  Для эффективного доступа к данным в глубоком обучении часто применяются ... базы данных.</p>
+            <input type="text" name="q72" />
+          </div>
+
+
+          <div class="question">
+            <p>73.  ... позволяют хранить и организовывать данные для обучения нейронных сетей.</p>
+            <input type="text" name="q73" />
+          </div>
+
+          <div class="question">
+            <p>74.  Для ускорения загрузки и обработки данных в глубоком обучении часто используются ... хранилища.</p>
+            <input type="text" name="q74" />
+          </div>
+
+          <div class="question">
+            <p>75.  ... хранилища данных позволяют эффективно работать с разреженными матрицами.</p>
+            <input type="text" name="q75" />
+          </div>
+
+          <div class="question">
+            <p>76.   Одним из популярных форматов для хранения табличных данных в глубоком обучении является ... .</p>
+            <input type="text" name="q76" />
+          </div>
+
+          <div class="question">
+            <p>77.   Для работы с временными рядами в глубоком обучении часто используются ... хранилища данных.</p>
+            <input type="text" name="q77" />
+          </div>
+
+          <div class="question">
+            <p>
+              78. Укажите фреймворк для работы с машинным обучением?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q78"
+                value="TensorFlow"
+              />TensorFlow</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q78"
+                value="Django"
+              />Django</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q78"
+                value="React"
+              />React</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q78"
+                value="Blazor"
+              />Blazor</label
+            >
+          </div>
+
+          <div class="question">
+            <p>
+              79. Какой фреймворк широко используется для разработки и обучения нейронных сетей?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q79"
+                value="PyTorch"
+              />PyTorch</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q79"
+                value="Django"
+              />Django</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q79"
+                value="React"
+              />React</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q79"
+                value="Ember"
+              />Ember</label
+            >
+          </div>
+
+          <div class="question">
+            <p>
+              80. Какой фреймворк предоставляет простой и интуитивно понятный API для решения задач машинного обучения?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q80"
+                value="Svelte"
+              />PyTorch</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q80"
+                value="Angular"
+              />Django</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q80"
+                value="Ruby on Rails"
+              />React</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q80"
+                value="Keras"
+              />Keras</label
+            >
+          </div>
+
+
+
+          <div class="question">
+            <p>
+              81. Какой фреймворк часто используется для создания веб-приложений, включающих компоненты машинного обучения?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q81"
+                value="Django"
+              />Django</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q81"
+                value="Express.js"
+              />Express.js</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q81"
+                value="Laravel"
+              />Laravel</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q81"
+                value="Pandas"
+              />Pandas</label
+            >
+          </div>
+
+          <div class="question">
+            <p>
+              82. Какой фреймворк позволяет легко встраивать модели машинного обучения в производственные системы?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q82"
+                value="TensorFlow Serving"
+              />TensorFlow Serving</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q82"
+                value="Spring Boot"
+              />Spring Boot</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q82"
+                value="Ember.js"
+              />Ember.js</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q82"
+                value="NumPy"
+              />NumPy</label
+            >
+          </div>
+
+
+          <div class="question">
+            <p>
+              83. Какой фреймворк предназначен для обработки и анализа данных перед их использованием в моделях машинного обучения?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q83"
+                value="Pandas"
+              />Pandas</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q83"
+                value="Ruby on Rails"
+              />Ruby on Rails</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q83"
+                value="ASP.NET"
+              />ASP.NET</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q83"
+                value="Vue.js"
+              />Vue.js</label
+            >
+          </div>
+
+          <div class="question">
+            <p>
+              84. Какой фреймворк предоставляет инструменты для визуализации данных и результатов работы моделей машинного обучения?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q84"
+                value="Matplotlib"
+              />Matplotlib</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q84"
+                value=" Django"
+              /> Django</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q84"
+                value="Symfony"
+              />Symfony</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q84"
+                value="Flask"
+              />Flask</label
+            >
+          </div>
+
+          <div class="question">
+            <p>
+              85. Какой фреймворк позволяет использовать готовые предобученные модели для решения конкретных задач машинного обучения?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q85"
+                value="TensorFlow Hub"
+              />TensorFlow Hub</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q85"
+                value="Ruby on Rails"
+              />Ruby on Rails</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q85"
+                value="Angular"
+              />Angular</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q85"
+                value="Express.js"
+              />Express.js</label
+            >
+          </div>
+
+          <div class="question">
+            <p>
+              86. Какой фреймворк предназначен для развертывания моделей машинного обучения в облаке?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q86"
+                value="Amazon SageMaker"
+              />Amazon SageMaker</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q86"
+                value="Laravel"
+              />Laravel</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q86"
+                value="Angular"
+              />Angular</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q86"
+                value="React"
+              />React</label
+            >
+          </div>
+
+          <div class="question">
+            <p>
+              87. Какой фреймворк предоставляет возможности для автоматизации процесса обучения моделей машинного обучения?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q87"
+                value="AutoML"
+              />AutoML</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q87"
+                value="Spring Boot"
+              />Spring Boot</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q87"
+                value="Angular"
+              />Angular</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q87"
+                value="Vue.js"
+              />Vue.js</label
+            >
+          </div>
+
+          <div class="question">
+            <p>88.  Какой язык программирования используется для разработки на PyTorch?</p>
+            <input type="text" name="q88" />
+          </div>
+
+          <div class="question">
+            <p>89.  Как называется основная структурная единица данных в PyTorch?</p>
+            <input type="text" name="q89" />
+          </div>
+
+          <div class="question">
+            <p>
+              90. Какой модуль в PyTorch отвечает за оптимизацию и обновление параметров моделей в процессе обучения?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q90"
+                value="torch.optim"
+              />torch.optim</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q90"
+                value="torch.nn"
+              />torch.nn</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q90"
+                value="torch.utils"
+              />torch.utils</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q90"
+                value="orch.functional"
+              />orch.functional</label
+            >
+          </div>
+
+          <div class="question">
+            <p>
+              91. Какой метод используется для передачи данных в модель PyTorch?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q91"
+                value="DataLoader"
+              />DataLoader</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q91"
+                value="DataFeeder"
+              />DataFeeder</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q91"
+                value="DataSender"
+              />DataSender</label
+            >
+          </div>
+
+          <div class="question">
+            <p>92.Как называется функция активации, которая часто используется в нейронных сетях?</p>
+            <select name="q92">
+              <option value="svm">
+                ReLU
+              </option>
+              <option value="knn">
+                Sigmoid
+              </option>
+              <option value="dna">
+                Tanh
+              </option>
+              <option value="tree">
+                Softmax
+              </option>
+            </select>
+          </div>
+
+
+
+          <div class="question">
+            <p>93.Какой метод позволяет задать функцию потерь (loss function) для обучения модели в PyTorch?</p>
+            <select name="q93">
+              <option value="svm">
+                criterion
+              </option>
+              <option value="knn">
+                loss_function
+              </option>
+              <option value="dna">
+                optimizer
+              </option>
+              <option value="tree">
+                train_loss
+              </option>
+            </select>
+          </div>
+
+
+          <div class="question">
+            <p>
+              94. Какой метод позволяет перенести модель на GPU для ускорения вычислений в PyTorch?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q94"
+                value="to cuda"
+              />to cuda</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q94"
+                value="use_gpu()"
+              />use_gpu()</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q94"
+                value="enable_cuda()"
+              />enable_cuda()</label
+            >
+          </div>
+
+          <div class="question">
+            <p>
+              95. Какой термин был введен Артуром Сэмюэлем для обозначения области исследований, которая позднее стала известна как машинное обучение?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q95"
+                value="Neural Networks"
+              />Neural Networks</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q95"
+                value="Data Science"
+              />Data Science</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q95"
+                value="Machine Learning"
+              />Machine Learning</label
+            >
+          </div>
+
+          <div class="question">
+            <p>
+              96. Какой из перечисленных методов машинного обучения был разработан раньше?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q96"
+                value="Линейная регрессия"
+              />Линейная регрессия</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q96"
+                value="Случайный лес"
+              />Случайный лес</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q96"
+                value="Градиентный бустинг"
+              />Градиентный бустинг</label
+            >
+          </div>
+
+          <div class="question">
+            <p>97.  Какая из компаний сыграла ключевую роль в продвижении и развитии машинного обучения через свои исследовательские проекты и продукты?</p>
+            <input type="text" name="q97" />
+          </div>
+
+
+          <div class="question">
+            <p>98.Какое из перечисленных событий не относится к истории развития машинного обучения?</p>
+            <select name="q98">
+              <option value="svm">
+                Победа AlphaGo над чемпионом по игре Go
+              </option>
+              <option value="knn">
+                Создание первой электронной вычислительной машины
+              </option>
+              <option value="dna">
+                Разработка алгоритма PageRank Google
+              </option>
+              <option value="tree">
+                Публикация статьи "Перцептрон" Фрэнком Розенблаттом
+              </option>
+            </select>
+          </div>
+
+          
+
+          <div class="question">
+            <p>
+              99. В каком году был предложен первый алгоритм машинного обучения?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q99"
+                value="1950"
+              />1950</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q99"
+                value="1980"
+              />1980</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q99"
+                value="2000"
+              />2000</label
+            >
+          </div>
+
+          <div class="question">
+            <p>
+              100. Кто из перечисленных ученых считается одним из основоположников машинного обучения?
+            </p>
+            <label
+              ><input
+                type="radio"
+                name="q100"
+                value="Alan Turing"
+              />Alan Turing</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q100"
+                value="Marie Curie"
+              />Marie Curie</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q100"
+                value="Isaac Newton"
+              />Isaac Newton</label
+            >
+          </div>
+
+          <div class="question">
+            <p>101.Какое из событий оказало значительное влияние на развитие машинного обучения в начале 21 века?</p>
+            <select name="q101">
+              <option value="svm">
+                Появление больших данных (Big Data)
+              </option>
+              <option value="knn">
+                Открытие квантовых компьютеров
+              </option>
+              <option value="dna">
+                Разработка нейроморфных чипов
+              </option>
+              <option value="tree">
+                Создание первого квантового алгоритма машинного обучения
+              </option>
+            </select>
+          </div>
+
+          <div class="question">
+            <p>102.Какой термин описывает способность компьютерных систем улучшать свою производительность без явного программирования?</p>
+            <select name="q102">
+              <option value="svm">
+                Reinforcement Learning
+              </option>
+              <option value="knn">
+                Unsupervised Learning
+              </option>
+              <option value="dna">
+                Self-learning
+              </option>
+              <option value="tree">
+                Deep Learning
+              </option>
+            </select>
+          </div>
+
+         
+
+        <button type="submit">Submit</button>
+      </form>
+      <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
